@@ -73,8 +73,8 @@ Las caracteristicas de un objeto son:
 Emilia puede entrenar a cualquier objeto que entienda los mensajes come y vola. En la \autoref{fig:test emilia entrena a pepita} se observa que pepita sufre el efecto luego que emilia la entrena, aumentando su energia de $100J$ a $180J$.
 
 
-\subsubsection{Wollok:Emilia entrena a Pepita}
-\lstinputlisting[language=java]{codigos/video17_e1_pepita/src/test.wtest}
+\subsubsection{Wollok: Emilia entrena a Pepita}
+\lstinputlisting[language=java]{codigos/video17_e1_pepita/src/test_emilia_pepita.wtest}
 
 \begin{figure}[H]
 	\centering
@@ -84,7 +84,16 @@ Emilia puede entrenar a cualquier objeto que entienda los mensajes come y vola. 
 \end{figure}  
 
 \subsection{Conceptos clave de la programación orientada a objetos}
+\begin{enumerate}
+	\item Los objetos están encapsulados ya que oculta y protege de los detalles de su implementación. Solo veo la interfaz de un objeto, o sea que mensajes entiende. Solo nos intereza saber que puede hacer. No puedo ver, ni usar los atributos de un objeto, sólo un objeto puede manipular sus atributos.
+	\item Cuando se delega en un objeto alguna actividad, se le da la responsabilidad al objeto de saber como hacerlo mientras que lo termine haciendo.
+	\item El polimorfismo implica que un objeto que envia mensajes pueda manipular al menos a dos objetos, siempre y cuando ellos entiendan los mensajes que envia el objeto.
+\end{enumerate}
+\subsection{Otra ave: El hancón pepote}
+Se dice que Pepote es otra ave ya que entiende los mismos mensajes que Pepita, es decir come y vola. Para emilia que sabe entrenar aves le es indiferente cual de ellos debe entrenar.
 
+\subsection{Wollok: El hancón pepote}
+\lstinputlisting[language=java]{codigos/video17_e1_pepita/src/pepote.wlk}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newpage
 
