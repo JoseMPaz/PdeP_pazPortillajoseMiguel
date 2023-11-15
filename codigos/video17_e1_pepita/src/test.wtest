@@ -1,0 +1,20 @@
+import pepita.*
+import emilia.*
+
+describe "Emilia conoce a su golondrina Pepita"
+{
+	test "Pepita inicia con 100J de ejergia" 
+	{
+		assert.equals(100,pepita.energia())
+	}
+	test "Emilia entrena a Pepita y finalmente tiene 180J de energia" 
+	{
+		emilia.entrena(pepita)
+		assert.equals(180,pepita.energia())
+		/*Ya que luego de volar 5km su energia disminuyo en 2*5=10 
+		 * Luego comio 10g y su energia aumento en 10*10=100
+		 * Finalmente volvio a volar 5km y su energia disminuto en 2*5=10
+		 * por lo tando la energia final resulta 100-10+100-10=180
+		 */
+	}
+}
