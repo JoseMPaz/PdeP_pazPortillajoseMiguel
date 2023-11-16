@@ -1,0 +1,22 @@
+import pepote.*
+import emilia.*
+
+describe "Emilia conoce a su Halcón Pepote"
+{
+	test "Pepote inicia con 255J de ejergia" 
+	{
+		assert.equals(255,pepote.energia())
+	}
+	test "Emilia entrena a Pepote y finalmente tiene 353J de energia" 
+	{
+		emilia.entrena(pepote)
+		assert.equals(353,pepote.energia())
+		/*Ya que luego de comer 5g 
+		 * luego de volar 10km 
+		 * y volver a comer 5g, sus atributos quedan
+		 * volado 10km y comido 10g, por lo tanto
+		 * su energia es 255 + 10**2 - 10/5 = 
+		 * = 255 + 100 -2 = 353
+		 */
+	}
+}

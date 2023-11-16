@@ -1,0 +1,62 @@
+import pepita.*
+import pepote.*
+import ramiro.*
+
+describe "Ramiro entrena aves con mal humor"
+{
+	test "Ramiro no durmio y tiene mal humor" 
+	{
+		assert.notThat(ramiro.estaDeBuenHumor())
+	}
+	test "Pepita inicialmente tiene 100J de energia, si es entrenada por ramiro un dia que tiene mal humor termina con 40J de energia" 
+	{
+		assert.equals(100,pepita.energia())
+		ramiro.entrena(pepita)
+		/*
+		 * Ramiro hace volar a pepita 30km, su energia disminuye en 30*2=60J.
+		 * Por lo tanto luego de ser entrenada por ramiro termina con 100-60=40J
+		*/
+		assert.equals(40,pepita.energia())
+	}
+	test "Pepote inicialmente tiene 255J de energia, si es entrenada por ramiro un dia que tiene mal humor termina con 249J de energia" 
+	{
+		assert.equals(255,pepote.energia())
+		ramiro.entrena(pepote)
+		/*
+		 * Ramiro hace volar a pepote 30km, entonces ha volado 30km y 
+		 * por ende su energia es 255 - 30/5 = 249J
+		*/
+		assert.equals(249,pepote.energia())
+	}
+}
+
+describe "Ramiro entrena aves con buen humor"
+{
+	test "Ramiro durmio 8 horas y tiene buen humor" 
+	{
+		ramiro.horasDormidas(8)
+		assert.that(ramiro.estaDeBuenHumor())
+	}
+	test "Pepita inicialmente tiene 100J de energia, si es entrenada por ramiro un dia que tiene buen humor termina con 70J de energia" 
+	{
+		ramiro.horasDormidas(8)
+		assert.equals(100,pepita.energia())
+		ramiro.entrena(pepita)
+		/*
+		 * Ramiro hace volar a pepita 15km, su energia disminuye en 15*2=30J.
+		 * Por lo tanto luego de ser entrenada por ramiro termina con 100-30=70J
+		*/
+		assert.equals(70,pepita.energia())
+	}
+	test "Pepote inicialmente tiene 255J de energia, si es entrenada por ramiro un dia que tiene buen humor termina con 252J de energia" 
+	{
+		ramiro.horasDormidas(8)
+		assert.equals(255,pepote.energia())
+		ramiro.entrena(pepote)
+		/*
+		 * Ramiro hace volar a pepote 15km, entonces ha volado 15km y 
+		 * por ende su energia es 255 - 15/5 = 252J
+		*/
+		assert.equals(252,pepote.energia())
+	}
+}

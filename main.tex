@@ -24,7 +24,7 @@
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Introducción a Objetivo}
+\section{Introducción a Objetos -> Video 17 Youtube}
 En este paradigma de objetos se vuelve a tener efecto, pero es menos declarativo que funcional y lógico. Se utiliza el lenguaje de programación Wollok. La idea es combinar estructuras de datos y operaciones.
 
 Las caracteristicas de un objeto son:
@@ -90,10 +90,61 @@ Emilia puede entrenar a cualquier objeto que entienda los mensajes come y vola. 
 	\item El polimorfismo implica que un objeto que envia mensajes pueda manipular al menos a dos objetos, siempre y cuando ellos entiendan los mensajes que envia el objeto.
 \end{enumerate}
 \subsection{Otra ave: El hancón pepote}
-Se dice que Pepote es otra ave ya que entiende los mismos mensajes que Pepita, es decir come y vola. Para emilia que sabe entrenar aves le es indiferente cual de ellos debe entrenar.
-
+Pepote es otra ave ya que entiende los mismos mensajes que Pepita, es decir come y vola. Para emilia que sabe entrenar aves le es indiferente cual de ellos debe entrenar. Pepote causa efecto sobre su energia al volar y comer, pero lo hace de forma distinta a Pepita.
+Se observa que su tiene como atributos a comido y volado, ademas su metodo energia no es un getter, sino que devuelve el resultado una operación.
 \subsection{Wollok: El hancón pepote}
 \lstinputlisting[language=java]{codigos/video17_e1_pepita/src/pepote.wlk}
+
+\subsection{Wollok-Test: Emilia entrena a Pepote}
+\lstinputlisting[language=java]{codigos/video17_e1_pepita/src/test_emilia_pepote.wtest}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{figuras/test_pepote_emilia.png}
+    \caption{Test unitario de pepote siendo entrenado por emilia.}
+    \label{fig:test emilia entrena a pepote}
+\end{figure}  
+
+\section{Diseño de métodos para favorecer el polimorfismo entre objetos}
+
+Si se tiene un objeto Pepaza que entiende los mensajes:
+
+\begin{itemize}
+	\item come()
+	\item volar(kilometros)
+	\item nadar()
+\end{itemize}
+
+Emilia no la podrá entrenar ya que 	Pepaza no entiene el mensaje vola, sino volar. Además su metodo come no espera un parametro que indique la cantidad que debe comer.
+Solución cambiar volar por vola y agregar parametro gramos en el metodo come aunque no se use.
+
+Si se tiene otro objeto Pepudo que entiende los mensajes:
+
+\begin{itemize}
+	\item come()
+	\item nada()
+\end{itemize}
+
+Emilia tampoco lo podrá entrenar a Pepudo, ya que no entiende el mensaje vola. 
+
+\section{Otro entrenado Ramiro}
+Ramiro en otro entrenado de aves. Si esta de buen humor hace volar a las aves 15km, sino 30km. Se sabe que si duerme por lo menos 8 horas entonces esta de buen humor, sino no.
+\subsection{Resolución: Otro entrenado Ramiro}
+Por ser entrenador, debe enterder el mensaje entrena que tiene un ave como parametro. Ademas tiene un atributo variable que indica las horas que durmio. Lo inicio en 0 horas dormida y entonces esta de mal humor. Si entreda a Pepita o Pepote los hara volar 30km, pero si en cambien durmio al menos 8 horas, entonces solo hará volar al ave que entrene 15km
+
+\subsection{Wollok: Otro entrenador Ramiro}
+\lstinputlisting[language=java]{codigos/video17_e1_pepita/src/ramiro.wlk}
+
+\subsection{Wollok-Test: Ramiro entrena a Pepita y Pepote, con buen y mal humor}
+\lstinputlisting[language=java]{codigos/video17_e1_pepita/src/test_ramiro_pepita_pepote.wtest}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{figuras/test_ramiro_pepita_pepote.png}
+    \caption{Test unitario de ramiro entrenado con buen y mal humor a pepita y pepote.}
+    \label{fig:test ramiro entrena a pepita y pepote}
+\end{figure}  
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newpage
 

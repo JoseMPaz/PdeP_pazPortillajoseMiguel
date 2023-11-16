@@ -3,13 +3,13 @@ object pepote
 	var volado = 0
 	var comido = 0
 	
-	method volar (kilometros)
+	method vola (kilometros)
 	{
-		volado += kilometros
+		volado = volado + kilometros
 	}	
-	method comer(gramos)
+	method come(gramos)
 	{
-		comido += gramos
+		comido = comido + gramos
 	}
 	method energia () = 255 + comido **2 - volado / 5
 }
