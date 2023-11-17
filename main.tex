@@ -105,7 +105,7 @@ Se observa que su tiene como atributos a comido y volado, ademas su metodo energ
     \label{fig:test emilia entrena a pepote}
 \end{figure}  
 
-\section{Diseño de métodos para favorecer el polimorfismo entre objetos}
+\subsection{Diseño de métodos para favorecer el polimorfismo entre objetos}
 
 Si se tiene un objeto Pepaza que entiende los mensajes:
 
@@ -127,7 +127,7 @@ Si se tiene otro objeto Pepudo que entiende los mensajes:
 
 Emilia tampoco lo podrá entrenar a Pepudo, ya que no entiende el mensaje vola. 
 
-\section{Otro entrenado Ramiro}
+\subsection{Otro entrenado Ramiro}
 Ramiro en otro entrenado de aves. Si esta de buen humor hace volar a las aves 15km, sino 30km. Se sabe que si duerme por lo menos 8 horas entonces esta de buen humor, sino no.
 \subsection{Resolución: Otro entrenado Ramiro}
 Por ser entrenador, debe enterder el mensaje entrena que tiene un ave como parametro. Ademas tiene un atributo variable que indica las horas que durmio. Lo inicio en 0 horas dormida y entonces esta de mal humor. Si entreda a Pepita o Pepote los hara volar 30km, pero si en cambien durmio al menos 8 horas, entonces solo hará volar al ave que entrene 15km
@@ -145,11 +145,39 @@ Por ser entrenador, debe enterder el mensaje entrena que tiene un ave como param
     \label{fig:test ramiro entrena a pepita y pepote}
 \end{figure}  
 
+\section{Práctica: La Feria -> Video 18 Youtube}
+
+Julieta cuenta con tickets y ademas no está cansada. Va a jugar los distintos juegos de la feria y al finalizar termina con más tickets y cansada dependiendo de cada juego.
+
+\subsection{Wollok: La jugadora Julieta}
+\lstinputlisting[language=java]{codigos/Video18_e1_la_feria/src/julieta.wlk}
+
+\subsection{Wollok: Juego tiro al blanco}
+\lstinputlisting[language=java]{codigos/Video18_e1_la_feria/src/tiroAlBlanco.wlk}
+
+\subsection{Wollok: Juego prueba de fuerza}
+\lstinputlisting[language=java]{codigos/Video18_e1_la_feria/src/pruebaDeFuerza.wlk}
+
+\subsection{Wollok: Juego La rueda de la fortuna}
+\lstinputlisting[language=java]{codigos/Video18_e1_la_feria/src/ruedaDeLaFortuna.wlk}
+
+\subsection{Wollok-Test: Julieta juega en la feria}
+\lstinputlisting[language=java]{codigos/Video18_e1_la_feria/src/test_julieta_juega_en_la_feria.wtest}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{figuras/test_julieta_juega_en_la_feria.png}
+    \caption{Test unitario julieta juega en la feria.}
+    \label{fig:test julieta juega en la feria}
+\end{figure}  
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newpage
 
 \appendix
-\section{Apéndice}
+
+\includepdf[pages=-]{LaFeriaVideo18.pdf}
 %\lstinputlisting[]{codigos/video17_e1_pepita/src/pepita.wlk}
 %\lstinputlisting{codigo.asm}
 

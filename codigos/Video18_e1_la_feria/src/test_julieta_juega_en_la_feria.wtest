@@ -1,0 +1,54 @@
+import julieta.*
+import tiroAlBlanco.*
+import pruebaDeFuerza.*
+import ruedaDeLaFortuna.*
+
+describe "Julieta juega en la feria que llego al pueblo"
+{
+	test "Julieta tiene 15 tickets del año anterior" 
+	{
+		assert.equals (15,julieta.tickets())
+	}
+	test "Julieta como esta descansada(cansancio 0 puntos) tiene 80N de fuerza"
+	{
+		assert.equals (80,julieta.fuerza())
+	}
+	test "Julieta tiene 20 puntos de punteria"
+	{
+		assert.equals(20,julieta.punteria())
+	}
+	test "Julieta juega tiro al blanco y termina con 17 tickets y como le produce 3 puntos de cansancio, tiene 77N de fuerza despues de jugar"
+	{
+		julieta.jugar(tiroAlBlanco)
+		assert.equals (17,julieta.tickets())
+		assert.equals (77,julieta.fuerza())
+	}
+	test "Julieta juega prueba de fueza y termina con 35 tickets ya que tenia 80 puntos de fuerza y como le produce 8 puntos de cansancio, tiene 72N de fuerza despues de jugar"
+	{
+		julieta.jugar(pruebaDeFuerza)
+		assert.equals (35,julieta.tickets())
+		assert.equals (72,julieta.fuerza())
+	}
+	test "Si Julieta vuelve a jugar prueba de fuerza seguira teniendo 35 tickets ya que no supera los 75 N de fuerza"
+	{
+		julieta.jugar(pruebaDeFuerza)
+		julieta.jugar(pruebaDeFuerza)
+		assert.equals (35,julieta.tickets())
+	}
+	test "Si Julieta juega la rueda de la fortuna gana entre 0 y 20 tickets más"
+	{
+		julieta.jugar(ruedaDeLaFortuna)
+		assert.that(julieta.tickets()>=15 and julieta.tickets()<=35)
+	}
+	test "Si la rueda de la fortuna esta aceitada no produce cansancio y sigue teniendo 80N de fuerza"
+	{
+		julieta.jugar(ruedaDeLaFortuna)
+		assert.equals (80,julieta.fuerza())
+	}
+	test "Si la rueda de la fortuna  no esta aceitada no produce 1 punto de cansancio y termina con 79N de fuerza"
+	{
+		ruedaDeLaFortuna.aceitada(false)
+		julieta.jugar(ruedaDeLaFortuna)
+		assert.equals (79,julieta.fuerza())
+	}
+}
