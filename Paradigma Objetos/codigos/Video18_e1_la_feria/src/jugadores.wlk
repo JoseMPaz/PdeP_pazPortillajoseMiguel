@@ -1,6 +1,5 @@
-import tiroAlBlanco.*
-import pruebaDeFuerza.*
-import ruedaDeLaFortuna.*
+import juegos.*
+import premios.*
 
 object julieta
 {
@@ -18,4 +17,10 @@ object julieta
 		tickets = tickets + juego.ticketsGanados (self)
 		cansancio = cansancio + juego.cansancioQueProduce ()
 	}
+	method puedeCanjear ( premio ) = tickets >= premio.costo()
+}
+object gerundio
+{
+	method jugar() { }
+	method puedeCanjear ( premio ) = true
 }

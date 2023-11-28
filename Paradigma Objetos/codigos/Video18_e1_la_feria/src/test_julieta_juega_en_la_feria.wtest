@@ -1,7 +1,5 @@
-import julieta.*
-import tiroAlBlanco.*
-import pruebaDeFuerza.*
-import ruedaDeLaFortuna.*
+import jugadores.*
+import juegos.*
 
 describe "Julieta juega en la feria que llego al pueblo"
 {

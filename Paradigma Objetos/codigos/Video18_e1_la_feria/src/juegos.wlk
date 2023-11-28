@@ -1,3 +1,16 @@
+object tiroAlBlanco 
+{
+	method ticketsGanados (jugador) = ( jugador.punteria() / 10 ).roundUp()
+	method cansancioQueProduce () = 3	
+}
+
+object pruebaDeFuerza 
+{
+	method ticketsGanados (jugador) = if (jugador.fuerza() > 75) 20 else 0
+	method cansancioQueProduce () = 8	
+	
+}
+
 object ruedaDeLaFortuna
 {
 	var property aceitada = true
