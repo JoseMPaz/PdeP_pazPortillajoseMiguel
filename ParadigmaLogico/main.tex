@@ -50,6 +50,75 @@ Se observa que el predicado humano esta contituido por 3 hechos de aridad 1, el 
 
 \subsection{$familia.pl$}
 \lstinputlisting[]{ClaseVideo10/familia.pl} 
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Orden Superior -> Video 11 Youtube}
+
+Son predicados que como parametro tienen otro predicado.
+
+\subsection{forall vs not -> caso 1}
+
+\begin{equation}
+	\forall x \in X: P(x) \iff \neg \exists x \in X: \neg P(x)
+\end{equation}
+
+Por ende decir todos los animales son friolentos, equivale a decir que no exite un animal que no sea friolento.
+En prolog serian:
+
+\begin{equation*}
+	forall(animal(Animal), friolento(Animal)).
+\end{equation*}  
+
+y
+
+\begin{equation*}
+	not((animal(Animal),not(friolento(Animal)))).
+\end{equation*}
+
+\subsection{forall vs not -> caso 2}
+
+\begin{equation}
+	\neg \forall x \in X: P(x) \iff \exists x \in X: \neg P(x)
+\end{equation}
+
+Por ende decir no todos los animales son friolentos, equivale a decir que exiten animales que no son friolentos.
+En prolog serian:
+
+\begin{equation*}
+	not (forall(animal(Animal), friolento(Animal))).
+\end{equation*}  
+
+y 
+
+\begin{equation*}
+	animal(Animal),not(friolento(Animal)).
+\end{equation*}
+
+ \subsection{forall vs not -> caso 3}
+ 
+ \begin{equation}
+	\forall x \in X: \neg P(x) \iff \neg \exists x \in X: P(x)
+\end{equation}
+ 
+Por ende decir de todos los animales ninguno es friolento, equivale a decir que no exiten animales que sean friolentos.
+En prolog serian:
+ 
+\begin{equation*}
+	forall(animal(Animal), not(friolento(Animal))).
+\end{equation*}  
+
+y
+
+\begin{equation*}
+	not((animal(Animal),friolento(Animal))).
+\end{equation*}
+
+\subsection{$animales.pl$}
+\lstinputlisting[]{ClaseVideo11/animales.pl} 
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newpage
 
