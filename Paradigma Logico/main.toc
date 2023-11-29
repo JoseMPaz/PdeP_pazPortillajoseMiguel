@@ -1,2 +1,3 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Introducci\IeC {\'o}n a L\IeC {\'o}gico -> Video 10 Youtube}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}$maestro\_alumno.pl$}{1}{subsection.1.1}%

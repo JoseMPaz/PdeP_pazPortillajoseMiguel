@@ -25,7 +25,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introducción a Lógico -> Video 10 Youtube}
- 
+
+En prolog se deben escribir predicados en un archivo con extensión .pl, luego para ejecutarlo desde terminal se debe escribir swipl nombre\_archivo.pl, para salir halt., para actualizar make., para correr test run\_test.
+
+La cantidad de parametros que recibe un predicado se llama aridad. Un predicado puede estar constituido por un hecho o bien por una regla. Donde los hechos no tienen pre requerimiento sino que es algo definido como verdadero, las reglas separan el nombre del predicado con un :- y a su derecha los pre requerimientos que debe cumplirse.
+
+Los parametros pueden ser individuos/átomos que empieza con minuscula o bien pueden ser una Variable que empieza con mayúscula.
+
+\subsection{$maestro\_alumno.pl$}
+\lstinputlisting[]{ClaseVideo10/maestro_alumno.pl} 
+
+Se observa que el predicado humano esta contituido por 3 hechos de aridad 1, el predicado mortal por 1 regla y 1 hecho de aridad 1, el predicado maestro por 2 hechos de aridad 2, el predicado groso por 1 regla de aridad 1.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{figuras/maestro_alumno.png}
+    \caption{Consultas a prolog con base de conocimiento maestro\_alumno.pl}
+    \label{fig:maestro alumno}
+\end{figure} 
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
