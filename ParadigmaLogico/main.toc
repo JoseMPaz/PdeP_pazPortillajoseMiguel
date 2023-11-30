@@ -10,3 +10,5 @@
 \contentsline {subsection}{\numberline {2.4}$animales.pl$}{4}{subsection.2.4}%
 \contentsline {section}{\numberline {3}TEG -> Video 12 Youtube}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}$teg.pl$}{7}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Functores y Polimorfismo -> Video 13 Youtube}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}$libreria.pl$}{10}{subsection.4.1}%
