@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.14)  29 NOV 2023 20:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.14)  30 NOV 2023 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1068,7 +1068,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (./caratula.tex
-<./figuras/logo_utn.jpg, id=43, 295.1025pt x 302.12875pt>
+<./figuras/logo_utn.jpg, id=47, 295.1025pt x 302.12875pt>
 File: ./figuras/logo_utn.jpg Graphic file (type jpg)
 <use ./figuras/logo_utn.jpg>
 Package pdftex.def Info: ./figuras/logo_utn.jpg  used on input line 6.
@@ -1119,7 +1119,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 35.
 
 (./ClaseVideo10/maestro_alumno.pl)
-<figuras/maestro_alumno.png, id=74, 762.85pt x 607.26875pt>
+<figuras/maestro_alumno.png, id=79, 762.85pt x 607.26875pt>
 File: figuras/maestro_alumno.png Graphic file (type png)
 <use figuras/maestro_alumno.png>
 Package pdftex.def Info: figuras/maestro_alumno.png  used on input line 42.
@@ -1211,8 +1211,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5])
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1222,21 +1222,103 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6] (./main.aux
+[6]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 127.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 127.
+
+(./ClaseVideo12/teg.pl
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7]
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 119.
+)
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9]
+<TEG.pdf, id=386, 598.235pt x 845.1575pt>
+File: TEG.pdf Graphic file (type pdf)
+<use TEG.pdf>
+Package pdftex.def Info: TEG.pdf  used on input line 137.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: TEG.pdf Graphic file (type pdf)
+<use TEG.pdf>
+Package pdftex.def Info: TEG.pdf  used on input line 137.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<TEG.pdf, id=389, page=1, 598.235pt x 845.1575pt>
+File: TEG.pdf Graphic file (type pdf)
+<use TEG.pdf, page 1>
+Package pdftex.def Info: TEG.pdf , page1 used on input line 137.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: TEG.pdf Graphic file (type pdf)
+<use TEG.pdf, page 1>
+Package pdftex.def Info: TEG.pdf , page1 used on input line 137.
+(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
+File: TEG.pdf Graphic file (type pdf)
+<use TEG.pdf, page 1>
+Package pdftex.def Info: TEG.pdf , page1 used on input line 137.
+(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
+File: TEG.pdf Graphic file (type pdf)
+<use TEG.pdf, page 1>
+Package pdftex.def Info: TEG.pdf , page1 used on input line 137.
+(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
+File: TEG.pdf Graphic file (type pdf)
+<use TEG.pdf, page 1>
+Package pdftex.def Info: TEG.pdf , page1 used on input line 137.
+(pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
+ [10 <./TEG.pdf>] (./main.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 096F74AA3C1C1AD3B55AE4B8584B9393;1507.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: B1E4412EA797D5F5C44C5EEBF8DB8D01;1670
+(rerunfilecheck)             After:  1CF3AD5CFD29DAEFA856A700D3036948;1758.
  ) 
 Here is how much of TeX's memory you used:
- 47143 strings out of 478287
- 1057954 string characters out of 5849288
- 1864938 words of memory out of 5000000
- 64601 multiletter control sequences out of 15000+600000
+ 47358 strings out of 478287
+ 1061029 string characters out of 5849288
+ 1864935 words of memory out of 5000000
+ 64679 multiletter control sequences out of 15000+600000
  492150 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,15n,117p,421b,2373s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 114i,17n,117p,421b,2375s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -1253,10 +1335,10 @@ blic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm10
 exmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt109
 5.pfb>
-Output written on main.pdf (8 pages, 389498 bytes).
+Output written on main.pdf (12 pages, 480632 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 299 compressed objects within 3 object streams
- 149 named destinations out of 1000 (max. 500000)
- 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 564 PDF objects out of 1000 (max. 8388607)
+ 490 compressed objects within 5 object streams
+ 280 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
