@@ -1,0 +1,48 @@
+import vaca.*
+describe "test de Lista de vacas"
+{
+	const rosita = new Vaca()
+	const petunia = new Vaca(estaContenta = false)
+	const vacas = [rosita, petunia]
+	test "Hay 2 vacas" 
+	{
+		assert.equals(2,vacas.size())
+	}
+	test "Agrego una nueva vaca, por ende ahora hay 3 vacas" 
+	{
+		vacas.add(rosita)
+		assert.equals(3,vacas.size())
+	}
+	test "Hay 1 referencia a una vaca que no esta contenta, que apunta a petunia" 
+	{
+		vacas.add(rosita)
+		const tristes = vacas.filter{vaca=>!vaca.estaContenta()}
+		assert.equals(1,tristes.size())
+	}
+	test "Hay 2 referencias a vacas Contentas, ambas apuntan a rosita" 
+	{
+		vacas.add(rosita)
+		const contentas = vacas.filter{vaca=>vaca.estaContenta()}
+		assert.equals(2,contentas.size())
+	}
+	test "Si remuevo a petunia de la lista de tristes, se queda sin elementos pero la lista de vacas sigue teniendo 2 vacas" 
+	{
+		const tristes = vacas.filter{vaca=>!vaca.estaContenta()}
+		tristes.remove(petunia)
+		assert.equals(0,tristes.size())
+		assert.equals(2,vacas.size())
+	}
+	test "rosita y petunia tienen 100L de leche" 
+	{
+		assert.equals(100,rosita.litrosDeLeche())
+		assert.equals(100,petunia.litrosDeLeche())
+	}
+	test "Si ordeño a las vacas tristes, petunia queda con 80L en la lista de vacas original y rosita con 100L" 
+	{
+		const tristes = vacas.filter{vaca=>!vaca.estaContenta()}
+		assert.equals(1,tristes.size())
+		tristes.forEach{ vaca => vaca.ordeniar() }
+		assert.equals(100,rosita.litrosDeLeche())
+		assert.equals(80,petunia.litrosDeLeche())
+	}
+}

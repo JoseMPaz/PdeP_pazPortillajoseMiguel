@@ -1,0 +1,14 @@
+import golondrina.*
+describe "Clase Golondrina"
+{
+	const pepita = new Golondrina()
+	const pepito = new Golondrina(energia = 180)
+	test "La energia de la golondrina pepita es 100" 
+	{
+		assert.equals(100,pepita.energia())
+	}
+	test "La energia de la golondrina pepito es 180"
+	{
+		assert.equals(180,pepito.energia())
+	}
+}

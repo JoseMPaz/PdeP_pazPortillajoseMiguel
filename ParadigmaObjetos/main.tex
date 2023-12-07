@@ -145,6 +145,8 @@ Por ser entrenador, debe enterder el mensaje entrena que tiene un ave como param
     \label{fig:test ramiro entrena a pepita y pepote}
 \end{figure}  
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
 \section{Práctica: La Feria -> Video 18 Youtube}
 
 Julieta cuenta con tickets y ademas no está cansada. Va a jugar los distintos juegos de la feria y al finalizar termina con más tickets y cansada dependiendo de cada juego.
@@ -169,13 +171,97 @@ Julieta cuenta con tickets y ademas no está cansada. Va a jugar los distintos j
     \label{fig:test julieta juega en la feria}
 \end{figure}  
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
+\section{Clases como plantillas para crear objetos -> Video 19 Youtube}
+
+Las clases no son objetos, solo son sus moldes a partir de ellos se pueden crear objetos mediante una instanciación.
+La clases definen atributos y prevee metodos. No se le pueden mandar mensajes a las clases ya que no son objetos.
+Todos los objetos de una misma clase son polimorficos ya que entienden los mismos mensajes.
+
+\subsection{Wollok: Clase Golondrina}
+\lstinputlisting[language=java]{codigos/Video19_e1_ClaseGolondrina/src/golondrina.wlk}
+
+\subsection{Wollok-Test: Clase Golondrina}
+\lstinputlisting[language=java]{codigos/Video19_e1_ClaseGolondrina/src/test_golondrina.wtest}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{figuras/test_clase_golondrina.png}
+    \caption{Test unitario clases golondrina.}
+    \label{fig:test clase golondrina}
+\end{figure} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \newpage
+\section{Colecciones y Bloques -> Video 20 Youtube}
 
+\subsection{Lista}
+Las listas se representas como: \textit{const lista = new [1,2,3]}\\
+ 
+Operaciones de Listas 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{figuras/operaciones_listas.png}
+    \caption{Operaciones de las listas.}
+    \label{fig:operaciones de listas}
+\end{figure} 
+
+De consulta son:
+
+\begin{itemize}
+	\item size()
+	\item head()
+	\item filter(criterio)
+	\item map(criterio)
+	\item all(criterio)
+	\item any(criterio)
+	\item sum()
+\end{itemize}
+
+y de efecto:
+
+\begin{itemize}
+	\item add(elemento)
+	\item remove(elemento)
+	\item forEach(operacion)
+\end{itemize}
+
+\subsection{Wollok: Clase Vaca}
+\lstinputlisting[language=java]{codigos/Video20_e1_Animales/src/vaca.wlk}
+
+\subsection{Wollok: Clase Cabra}
+\lstinputlisting[language=java]{codigos/Video20_e1_Animales/src/cabra.wlk}
+
+\subsection{Wollok: Clase Corral}
+\lstinputlisting[language=java]{codigos/Video20_e1_Animales/src/corral.wlk}
+
+\subsection{Wollok-Test: Prueba en lista de vacas}
+\lstinputlisting[language=java]{codigos/Video20_e1_Animales/src/test_vacas.wtest}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
+\section{Herencia -> Video 21 Youtube}
+Las subclases heredan atributos y metodos de una superclase. Cada subclase tiene una sola superclase. No hace falta tener herencia para tener polimorfismo.
+
+\subsection{Wollok: Clase Tanque}
+\lstinputlisting[language=java]{codigos/Video21_e1_TanquesDeGuerra/src/tanque.wlk}
+
+\subsection{Wollok: Clase Arma}
+\lstinputlisting[language=java]{codigos/Video21_e1_TanquesDeGuerra/src/arma.wlk}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
+\section{Herencia vs Composicion -> Video 22 Youtube}
+
+\subsection{Wollok: Juego Por La Horda}
+\lstinputlisting[language=java]{codigos/Video22_e1_PorLaHorda/src/juego.wlk}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
 \appendix
-
 \includepdf[pages=-]{LaFeriaVideo18.pdf}
+\includepdf[pages=-]{PorLaHordaVideo22.pdf}
 %\lstinputlisting[]{codigos/video17_e1_pepita/src/pepita.wlk}
 %\lstinputlisting{codigo.asm}
 

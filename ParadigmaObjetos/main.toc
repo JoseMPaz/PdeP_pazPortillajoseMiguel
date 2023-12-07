@@ -17,8 +17,22 @@
 \contentsline {subsection}{\numberline {1.10}Resoluci\IeC {\'o}n: Otro entrenado Ramiro}{5}{subsection.1.10}%
 \contentsline {subsection}{\numberline {1.11}Wollok: Otro entrenador Ramiro}{5}{subsection.1.11}%
 \contentsline {subsection}{\numberline {1.12}Wollok-Test: Ramiro entrena a Pepita y Pepote, con buen y mal humor}{6}{subsection.1.12}%
-\contentsline {section}{\numberline {2}Pr\IeC {\'a}ctica: La Feria -> Video 18 Youtube}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Wollok: Jugadores de la feria}{8}{subsection.2.1}%
+\contentsline {section}{\numberline {2}Pr\IeC {\'a}ctica: La Feria -> Video 18 Youtube}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Wollok: Jugadores de la feria}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Wollok: Juegos de la feria}{9}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Wollok: Premio de la feria}{9}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Wollok-Test: Julieta juega en la feria}{9}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.3}Wollok: Premio de la feria}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Wollok-Test: Julieta juega en la feria}{10}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Clases como plantillas para crear objetos -> Video 19 Youtube}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Wollok: Clase Golondrina}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Wollok-Test: Clase Golondrina}{12}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Colecciones y Bloques -> Video 20 Youtube}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Lista}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Wollok: Clase Vaca}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Wollok: Clase Cabra}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Wollok: Clase Corral}{14}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Wollok-Test: Prueba en lista de vacas}{14}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Herencia -> Video 21 Youtube}{16}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Wollok: Clase Tanque}{16}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Wollok: Clase Arma}{16}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Herencia vs Composicion -> Video 22 Youtube}{19}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Wollok: Juego Por La Horda}{19}{subsection.6.1}%
