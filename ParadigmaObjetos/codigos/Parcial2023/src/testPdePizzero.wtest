@@ -1,0 +1,7 @@
+describe "Concurso de Pizzas"
+{
+	test "testX" 
+	{
+		assert.that(true)
+	}	
+}
